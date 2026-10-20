@@ -264,3 +264,14 @@ a{color:inherit;text-decoration:none}
   .route li{grid-template-columns:1fr}
   .route .tm{text-align:left}
 }
+
+/* ---------- 30초 영상 (Film) ---------- */
+.film-box{position:relative;background:#000;border:1px solid var(--line-d)}
+.film-box video{width:100%;aspect-ratio:16/9;display:block;background:#000}
+.film-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.55)}
+.film-foot a{color:var(--gold-2);text-decoration:underline;text-underline-offset:3px}
+.qrbox .mail{display:block;margin-top:10px;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.ft-info a,.ft-top a[href^="mailto"]{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:480px){.hero .cta .btn:last-child{flex-basis:100%}}
+@media (max-width:860px){.hero .cta a[href^="tel"]{display:none}.hero .cta .btn{flex:1 1 100%}}
+@media (max-width:860px){.hero-in{padding-bottom:96px}.hero .cta{margin-top:26px;gap:8px}.hero .cta .btn{height:50px}}
