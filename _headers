@@ -1,0 +1,9 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+/*.mp4
+  Cache-Control: public, max-age=604800
+/*.jpg
+  Cache-Control: public, max-age=604800
