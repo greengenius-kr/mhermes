@@ -332,3 +332,4 @@ svg.alt-on .jr-alt{opacity:1}
   .jr-replay{top:calc(62vh - 50px);bottom:auto;right:16px}
   .jr-tab{padding:12px 16px;font-size:14px}
 }
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
