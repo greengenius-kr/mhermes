@@ -29,7 +29,7 @@
 <header class="hd" id="hd">
   <div class="wrap">
     <a href="index.html" class="logo" aria-label="엠에르메스 홈"><b>M·HERMES</b><small>JEMULPO RESIDENCE</small></a>
-    <nav class="nav" id="nav"><a href="#film">영상</a><a href="#concept">컨셉</a><a href="#space">공간</a><a href="#gallery">갤러리</a><a href="#location">입지·교통</a><a href="#vision">미래가치</a><a href="faq.html">Q&amp;A</a><a href="#consult">상담</a></nav>
+    <nav class="nav" id="nav"><a href="#film">영상</a><a href="#journey">여정</a><a href="#concept">컨셉</a><a href="#space">공간</a><a href="#gallery">갤러리</a><a href="#location">입지·교통</a><a href="#vision">미래가치</a><a href="faq.html">Q&amp;A</a><a href="#consult">상담</a></nav>
     <div class="hd-cta">
       <a class="hd-tel" href="tel:16702584">1670-2584</a>
       <a class="btn btn-kakao btn-sm" href="https://pf.kakao.com/_nxiFmX/chat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.48 3 2 6.58 2 11c0 2.85 1.86 5.35 4.66 6.77l-.95 3.48c-.08.31.27.56.54.38l4.13-2.74c.53.07 1.07.11 1.62.11 5.52 0 10-3.58 10-8S17.52 3 12 3z"/></svg>카카오톡 상담</a>
@@ -62,15 +62,52 @@
 </div></section>
 
 <section class="sec black film" id="film"><div class="wrap">
-  <div class="head rv"><span class="label">Film</span><h2 class="h2">30초로 보는 엠에르메스</h2><p class="lead">실제 호실과 입지를 30초 영상으로 담았습니다. 소리 없이 재생됩니다.</p></div>
+  <div class="head rv"><span class="label">Film</span><h2 class="h2">30초로 보는 엠에르메스</h2><p class="lead">실제 호실과 입지를 30초 영상으로 담았습니다. 잔잔한 피아노 배경음과 함께 재생됩니다.</p></div>
   <div class="film-box rv">
-    <video id="film-video" controls muted playsinline preload="none" poster="film-poster.jpg">
+    <video id="film-video" controls playsinline preload="none" poster="film-poster.jpg">
       <source src="film-mhermes.mp4" type="video/mp4">
       이 브라우저는 동영상 재생을 지원하지 않습니다. <a href="film-mhermes.mp4">영상 파일 내려받기</a>
     </video>
   </div>
-  <div class="film-foot rv"><span>실제 호실 촬영 · 가구·소품은 연출용 · 31초 · 소리 없음</span><a href="film-mhermes.mp4" download>영상 파일 내려받기 ↓</a></div>
+  <div class="film-foot rv"><span>실제 호실 촬영 · 가구·소품은 연출용 · 31초 · 배경음악 자체 제작</span><a href="film-mhermes.mp4" download>영상 파일 내려받기 ↓</a></div>
 </div></section>
+
+<section class="sec black journey" id="journey"><div class="wrap">
+  <div class="head rv"><span class="label">Journey</span><h2 class="h2">서울역·강남에 사무실이 있어도,<br>집은 제물포에</h2><p class="lead">단지를 나와 제물포역까지 걷고, 1호선을 따라 서울로. 인천공항과 주말 산책 코스까지, 실제 동선을 따라가 보세요.</p></div>
+  <div class="jr-tabs" role="tablist">
+    <button class="jr-tab" data-k="seoul" role="tab">서울역</button>
+    <button class="jr-tab" data-k="gangnam" role="tab">강남</button>
+    <button class="jr-tab" data-k="airport" role="tab">인천공항</button>
+    <button class="jr-tab" data-k="walk" role="tab">산책 · 주말</button>
+  </div>
+</div>
+<div class="jr-stage rv" aria-label="엠에르메스에서 서울역·강남·인천공항까지의 이동 경로 지도">
+  <svg viewBox="0 0 1300 660" preserveAspectRatio="xMidYMid slice" role="img" aria-label="이동 경로 지도"></svg>
+  <div class="jr-count"><span></span><b>0</b><small>분</small></div>
+  <button class="jr-replay" aria-label="다시 보기">↻ 다시 보기</button>
+  <div class="jr-panel">
+    <div class="jr-info" data-k="seoul">
+      <h3>서울역까지 <em>환승 없이</em> 약 60분</h3>
+      <ol><li><b>단지 → 제물포역</b><span>도보 약 7분</span></li><li><b>제물포역 → 서울역</b><span>1호선 직결 · 급행 정차역</span></li><li><b>용산 · 서울역 업무지구</b><span>앉아서 가는 한 번의 출근길</span></li></ol>
+    </div>
+    <div class="jr-info" data-k="gangnam" hidden>
+      <h3>강남까지 <em>한 번 환승</em> 약 65~75분</h3>
+      <ol><li><b>단지 → 제물포역</b><span>도보 약 7분</span></li><li><b>1호선 급행 → 신도림</b><span>경인선 급행 정차</span></li><li><b>2호선 → 강남역</b><span>테헤란로 업무지구</span></li></ol>
+    </div>
+    <div class="jr-info" data-k="airport" hidden>
+      <h3>인천국제공항까지 <em>차량 약 40분</em></h3>
+      <ol><li><b>인천대교 · 영종대교 · 제3연륙교</b><span>영종도로 가는 세 갈래 길</span></li><li><b>제3연륙교 2026.1 개통</b><span>인천시민 통행료 무료</span></li><li><b>2025년 국제여객 7,407만 명</b><span>4단계 확장 완료 · 연간 1억 600만 명 수용</span></li></ol>
+      <p class="jr-why">해외 출장·여행, 공항 일자리, 외국인 수요까지 — 공항과 가까운 집의 가치는 커지고 있습니다.</p>
+    </div>
+    <div class="jr-info" data-k="walk" hidden>
+      <h3>집은 잠만 자는 곳이 아니니까</h3>
+      <ol class="spots"><li><b>수봉공원</b><span>도보 약 15분 · 산책과 야경</span></li><li><b>개항장 · 차이나타운 · 자유공원</b><span>1호선 3정거장 · 근대 거리와 항구 전망</span></li><li><b>신포국제시장 · 상상플랫폼</b><span>먹거리 골목 · 내항 복합문화공간</span></li><li><b>월미도 · 송도 센트럴파크</b><span>차량 15~20분 · 바다 산책로와 도심 공원</span></li></ol>
+    </div>
+  </div>
+  <p class="jr-note">개념도 · 실제 축척·경로와 다를 수 있습니다 · 소요시간은 예상치</p>
+</div>
+<div class="wrap"><p class="note" style="margin-top:18px">출처 · <a href="https://www.kyeonggi.com/article/20260708580542" target="_blank" rel="noopener">경기일보 2026.7 (인천공항 2025 국제여객)</a> · <a href="https://www.segye.com/newsView/20241129503716" target="_blank" rel="noopener">세계일보 2024.11 (4단계 확장)</a> · <a href="https://m.go.seoul.co.kr/news/2026/01/04/20260104500054" target="_blank" rel="noopener">서울신문 2026.1 (제3연륙교)</a></p></div>
+</section>
 
 <section class="sec" id="concept"><div class="wrap concept">
   <div class="rv">
@@ -274,6 +311,7 @@
   } else els.forEach(function(el){el.classList.add('in');});
 })();
 </script>
+<script src="journey.js" defer></script>
 <script>
 (function(){
   var v=document.getElementById('heroVid');
