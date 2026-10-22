@@ -333,3 +333,14 @@ svg.alt-on .jr-alt{opacity:1}
   .jr-tab{padding:12px 16px;font-size:14px}
 }
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- 리뉴얼: 가로 사진 · 갤러리 필터 ---------- */
+.space .ph img{aspect-ratio:auto;height:100%;min-height:460px}
+.gal-tabs{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line-d);width:max-content;max-width:100%;margin-bottom:22px}
+.gf{background:none;border:0;border-right:1px solid var(--line-d);color:rgba(255,255,255,.65);font:inherit;font-size:14.5px;padding:11px 20px;cursor:pointer}
+.gf:last-child{border-right:0}
+.gf.on{background:var(--gold);color:#111;font-weight:600}
+.gal .gi[hidden]{display:none}
+.gal .wide img{aspect-ratio:16/10.2}
+@media (max-width:860px){.space .ph img{min-height:0;height:auto;aspect-ratio:4/3}.gf{padding:10px 14px;font-size:13.5px}}
+.gal{grid-auto-flow:dense}
